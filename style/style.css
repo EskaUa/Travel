@@ -1,0 +1,21 @@
+
+/*global*/
+body{
+	font: 16px/1.5em "Tahoma" , sans-serif;
+}
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:before , .clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+}
