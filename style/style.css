@@ -17,6 +17,10 @@ a{
 h1,h2,h3,h4{
 	margin: 0;
 }
+img{
+	max-width: 100%;
+	height: auto;
+}
 .clearfix:before , .clearfix:after{
 	content: '';
 	display: block;
@@ -32,6 +36,7 @@ h1,h2,h3,h4{
 	background-color: #fff;
 	
 }
+
 .navbar{
 	padding: 15px 0;
 }
@@ -148,7 +153,9 @@ h1,h2,h3,h4{
 	min-height: 140px;
 	float: left;
 	border-radius: 50%;
+	position: relative; 	
 }
+
 .services__item.www{
 	background: #fff url(../img/www.png) no-repeat center center ;
 }
@@ -160,6 +167,16 @@ h1,h2,h3,h4{
 }
 .services__item.search{
 	background: #fff url(../img/search.png) no-repeat center center;
+}
+
+.services__desc{
+	
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-size: 19px;
+	color: #7e7c7c;
 }
 /*/places*/
 /*/services*/
@@ -175,3 +192,28 @@ h1,h2,h3,h4{
 	color: #949494;
 }
 /*/footer*/
+
+/*media queries*/
+
+@media screen and (max-width: 650px){
+	.navbar__logo{
+		float: none;
+		text-align: center
+	}
+	.navbar__navigation{
+		float: none;
+	}
+	.hero{
+		padding: 100px;
+	}
+	.hero h2{
+		font-size: 36px;
+	}
+	.hero .btn{
+		font-size: 28px;
+		padding: 10px 55px;
+	}
+	.services__item {
+		width: 40%;
+		margin-bottom: 70px
+	}
